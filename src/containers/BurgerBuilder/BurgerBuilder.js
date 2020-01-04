@@ -5,7 +5,7 @@ import Burger from '../../components/Burger/Burger'
 import BuildControls from '../../components/Burger/BuildControls/BuildControls'
 
 const INGREDIENT_PRICES = {
-    salad: 0.5,
+    lettuce: 0.5,
     cheese: 0.4,
     meat: 1.3, 
     bacon: 0.7
@@ -43,7 +43,7 @@ class BurgerBuilder extends Component {
         const priceSubtraction = INGREDIENT_PRICES[type];
         const price = this.state.totalPrice - priceSubtraction;
 
-        this.setState({totalPrice: price, ingredients: updatedIngredients})
+        this.setState({totalPrice: price, ingredients: updatedIngredients});
     }
 
     render() {
