@@ -21,7 +21,13 @@ const buildControls = props => (
                 disabled={props.disabled[control.type]}
                 />
         ))}
+        <button 
+            className={classes.OrderButton}
+            disabled={!props.purchaseable}
+        >
+            Order Now!
+        </button>
     </div>
 );
 
-export default buildControls
+export default buildControls;
