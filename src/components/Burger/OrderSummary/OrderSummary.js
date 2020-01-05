@@ -1,6 +1,7 @@
 import React from 'react';
 
 import Aux from '../../../hoc/Aux';
+import Button from '../../UI/Button/Button';
 
 const orderSummary = props => {
     const ingredientSummary = Object.keys(props.ingredients)
@@ -20,8 +21,8 @@ const orderSummary = props => {
             </ul>
             <p>Checkout?</p>
 
-            <button>Cancel</button>
-            <button>Continue</button>
+            <Button buttonType="Danger">Cancel</Button>
+            <Button buttonType="Success">Continue</Button>
         </Aux>
     );
 };
